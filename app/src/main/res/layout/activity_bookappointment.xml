@@ -1,0 +1,87 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/name"
+            android:hint="Full Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="TextFields" />
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/dateBtn"
+            android:text="Select Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/timeBtn"
+            android:text="Select Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:text="Male"
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:text="Female"
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/terms"
+            android:text="Accept Terms &amp; Conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:text="Confirm Booking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</ScrollView>
